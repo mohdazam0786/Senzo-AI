@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Senzo - AI Powered Career Coach 🚀
 
-## Getting Started
+Senzo is an AI-powered full-stack career coach that takes your resume, interview preparation, and career growth to the next level.  
+It combines **Next.js**, **ShadCN UI**, **PostgreSQL**, and **AI APIs** (Gemini) to deliver enterprise-grade features like **ATS-optimized resume builder, intelligent cover letter generator, interview prep quizzes, and real-time industry insights**.
 
-First, run the development server:
+---
 
+## 🌟 Features
+
+### 🔹 User Onboarding & Dashboard
+- Seamless onboarding flow with Google/email login.
+- Interactive dashboard showing **in-demand skills** and **salary trends** in your industry.
+- Data updates weekly using scheduled background jobs (cron).
+
+### 🔹 AI Resume Builder
+- Build **ATS-optimized resumes** tailored to your industry and skills.
+- Improve bullet points with AI suggestions powered by **Gemini API**.
+- Fully customizable and exportable as **PDF**.
+- Markdown-based resume editing and database persistence.
+
+### 🔹 Interview Preparation
+- Role-specific interview quizzes with **AI-generated questions**.
+- Instant feedback with correct answers and detailed explanations.
+- Track performance over time with charts powered by **Recharts**.
+- AI-driven **improvement tips** for each attempt.
+
+### 🔹 Cover Letter Generator
+- Intelligent cover letter builder analyzing **job descriptions**.
+- Generates tailored, professional content instantly.
+- Easy editing and saving for multiple applications.
+
+### 🔹 Industry Insights
+- Weekly updated data about **job market outlook, demand, and growth trends**.
+- Key industry insights, **top skills recommendations**, and **salary benchmarks**.
+
+### 🔹 Modern UI/UX
+- Fully responsive design using **Next.js** + **ShadCN UI**.
+- Professional **landing page** with animations, testimonials, FAQs, and CTAs.
+- Beautiful interactive charts, dropdowns, and forms.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** Next.js, React, Tailwind CSS, ShadCN UI, Recharts  
+**Backend:** Node.js, Express.js  
+**Database:** PostgreSQL  
+**AI/ML:** Gemini API (for resume, interview, cover letter generation)  
+**Auth:** Clerk (Google & Email authentication)  
+**Validation & Forms:** React Hook Form + Zod  
+**Other:** Cron Jobs for background data updates  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js >= 18
+- PostgreSQL installed locally or on cloud (e.g., Supabase, Neon)
+- Gemini API key
+- Clerk API credentials
+
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/mohdazam0786/senzo.git
+
+# Move into project directory
+cd senzo
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
